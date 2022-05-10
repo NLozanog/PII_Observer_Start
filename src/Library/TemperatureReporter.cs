@@ -8,7 +8,7 @@ namespace Observer
 
         private ISubject<Temperature> provider;
 
-        public void StartReporting(TemperatureSensor provider)
+        public void StartReporting(ISubject<Temperature> provider)
         {
             this.provider = provider;
             this.first = true;
